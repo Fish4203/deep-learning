@@ -1,0 +1,25 @@
+[project]
+name = "deep-learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.10.18"
+dependencies = [
+    "matplotlib>=3.10.5",
+    "numpy>=1.26",
+    "setuptools>=80.9.0",
+    "tensorflow-rocm==2.16.2",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.30.1",
+]
+
+[tool.uv.sources]
+tensorflow-rocm = { index = "rocm" }
+
+[[tool.uv.index]]
+name = "rocm"
+url = "https://repo.radeon.com/rocm/manylinux/rocm-rel-6.3.4/"
+format = "flat"
