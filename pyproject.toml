@@ -5,8 +5,11 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = "==3.10.18"
 dependencies = [
+    "jedi>=0.19.2",
     "matplotlib>=3.10.5",
     "numpy>=1.26",
+    "pylance>=0.38.0",
+    "python-lsp-server>=1.13.1",
     "setuptools>=80.9.0",
     "tensorflow-rocm==2.16.2",
 ]
