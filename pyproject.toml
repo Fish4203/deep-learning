@@ -8,10 +8,12 @@ dependencies = [
     "jedi>=0.19.2",
     "matplotlib>=3.10.5",
     "numpy>=1.26",
+    "opencv-python>=4.11.0.86",
     "pylance>=0.38.0",
     "python-lsp-server>=1.13.1",
     "setuptools>=80.9.0",
     "tensorflow-rocm==2.16.2",
+    "vit-keras>=0.2.0",
 ]
 
 [dependency-groups]
