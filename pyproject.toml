@@ -14,7 +14,7 @@ dependencies = [
     "python-lsp-server>=1.13.1",
     "setuptools>=80.9.0",
     "tensorflow-rocm==2.16.2",
-    "vit-keras>=0.2.0",
+    "tensorflow-text==2.16.1",
 ]
 
 [dependency-groups]

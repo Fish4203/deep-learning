@@ -224,7 +224,7 @@ dependencies = [
     { name = "python-lsp-server" },
     { name = "setuptools" },
     { name = "tensorflow-rocm" },
-    { name = "vit-keras" },
+    { name = "tensorflow-text" },
 ]
 
 [package.dev-dependencies]
@@ -243,7 +243,7 @@ requires-dist = [
     { name = "python-lsp-server", specifier = ">=1.13.1" },
     { name = "setuptools", specifier = ">=80.9.0" },
     { name = "tensorflow-rocm", specifier = "==2.16.2", index = "https://repo.radeon.com/rocm/manylinux/rocm-rel-6.3.4/" },
-    { name = "vit-keras", specifier = ">=0.2.0" },
+    { name = "tensorflow-text", specifier = "==2.16.1" },
 ]
 
 [package.metadata.requires-dev]
@@ -1133,26 +1133,6 @@ wheels = [
 ]
 
 [[package]]
-name = "scipy"
-version = "1.15.3"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "numpy" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/0f/37/6964b830433e654ec7485e45a00fc9a27cf868d622838f6b6d9c5ec0d532/scipy-1.15.3.tar.gz", hash = "sha256:eae3cf522bc7df64b42cad3925c876e1b0b6c35c1337c93e12c0f366f55b0eaf", size = 59419214, upload-time = "2025-05-08T16:13:05.955Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/78/2f/4966032c5f8cc7e6a60f1b2e0ad686293b9474b65246b0c642e3ef3badd0/scipy-1.15.3-cp310-cp310-macosx_10_13_x86_64.whl", hash = "sha256:a345928c86d535060c9c2b25e71e87c39ab2f22fc96e9636bd74d1dbf9de448c", size = 38702770, upload-time = "2025-05-08T16:04:20.849Z" },
-    { url = "https://files.pythonhosted.org/packages/a0/6e/0c3bf90fae0e910c274db43304ebe25a6b391327f3f10b5dcc638c090795/scipy-1.15.3-cp310-cp310-macosx_12_0_arm64.whl", hash = "sha256:ad3432cb0f9ed87477a8d97f03b763fd1d57709f1bbde3c9369b1dff5503b253", size = 30094511, upload-time = "2025-05-08T16:04:27.103Z" },
-    { url = "https://files.pythonhosted.org/packages/ea/b1/4deb37252311c1acff7f101f6453f0440794f51b6eacb1aad4459a134081/scipy-1.15.3-cp310-cp310-macosx_14_0_arm64.whl", hash = "sha256:aef683a9ae6eb00728a542b796f52a5477b78252edede72b8327a886ab63293f", size = 22368151, upload-time = "2025-05-08T16:04:31.731Z" },
-    { url = "https://files.pythonhosted.org/packages/38/7d/f457626e3cd3c29b3a49ca115a304cebb8cc6f31b04678f03b216899d3c6/scipy-1.15.3-cp310-cp310-macosx_14_0_x86_64.whl", hash = "sha256:1c832e1bd78dea67d5c16f786681b28dd695a8cb1fb90af2e27580d3d0967e92", size = 25121732, upload-time = "2025-05-08T16:04:36.596Z" },
-    { url = "https://files.pythonhosted.org/packages/db/0a/92b1de4a7adc7a15dcf5bddc6e191f6f29ee663b30511ce20467ef9b82e4/scipy-1.15.3-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:263961f658ce2165bbd7b99fa5135195c3a12d9bef045345016b8b50c315cb82", size = 35547617, upload-time = "2025-05-08T16:04:43.546Z" },
-    { url = "https://files.pythonhosted.org/packages/8e/6d/41991e503e51fc1134502694c5fa7a1671501a17ffa12716a4a9151af3df/scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9e2abc762b0811e09a0d3258abee2d98e0c703eee49464ce0069590846f31d40", size = 37662964, upload-time = "2025-05-08T16:04:49.431Z" },
-    { url = "https://files.pythonhosted.org/packages/25/e1/3df8f83cb15f3500478c889be8fb18700813b95e9e087328230b98d547ff/scipy-1.15.3-cp310-cp310-musllinux_1_2_aarch64.whl", hash = "sha256:ed7284b21a7a0c8f1b6e5977ac05396c0d008b89e05498c8b7e8f4a1423bba0e", size = 37238749, upload-time = "2025-05-08T16:04:55.215Z" },
-    { url = "https://files.pythonhosted.org/packages/93/3e/b3257cf446f2a3533ed7809757039016b74cd6f38271de91682aa844cfc5/scipy-1.15.3-cp310-cp310-musllinux_1_2_x86_64.whl", hash = "sha256:5380741e53df2c566f4d234b100a484b420af85deb39ea35a1cc1be84ff53a5c", size = 40022383, upload-time = "2025-05-08T16:05:01.914Z" },
-    { url = "https://files.pythonhosted.org/packages/d1/84/55bc4881973d3f79b479a5a2e2df61c8c9a04fcb986a213ac9c02cfb659b/scipy-1.15.3-cp310-cp310-win_amd64.whl", hash = "sha256:9d61e97b186a57350f6d6fd72640f9e99d5a4a2b8fbf4b9ee9a841eab327dc13", size = 41259201, upload-time = "2025-05-08T16:05:08.166Z" },
-]
-
-[[package]]
 name = "setuptools"
 version = "80.9.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1286,6 +1266,14 @@ wheels = [
 ]
 
 [[package]]
+name = "tensorflow-macos"
+version = "2.16.2"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/25/66/c504f415d5356def468e44e09dad60bf0d0f720b399e6c9af3488382e433/tensorflow_macos-2.16.2-cp310-cp310-macosx_12_0_arm64.whl", hash = "sha256:6a945ad9c0add0d9be46f1addc07e5475ac24217609bfea6e05d9c5ab66e7204", size = 2135, upload-time = "2024-06-28T19:12:28.64Z" },
+]
+
+[[package]]
 name = "tensorflow-rocm"
 version = "2.16.2"
 source = { registry = "https://repo.radeon.com/rocm/manylinux/rocm-rel-6.3.4/" }
@@ -1320,15 +1308,15 @@ wheels = [
 
 [[package]]
 name = "tensorflow-text"
-version = "2.19.0"
+version = "2.16.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "tensorflow", marker = "sys_platform == 'never'" },
+    { name = "tensorflow-macos", marker = "platform_machine == 'arm64' and sys_platform == 'darwin'" },
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/99/9d/194a7e50580b6e4c64d4bba8de071b9fca8bd0fe38ef7f783b3e291bfdf2/tensorflow_text-2.19.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:5839e214c0a24d9f85e02611ad083c9e5bd3943aedbf2b3efe12a86059e45f07", size = 6107147, upload-time = "2025-04-04T20:52:28.474Z" },
-    { url = "https://files.pythonhosted.org/packages/7b/85/06ea5514f369b76b173e033608e8a6cbd0965b2ac64e46782e9579129aee/tensorflow_text-2.19.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:01119fbf7836a50bf7beb118d4fba2211a5b4a1001c7118db2c0294b3f7772ad", size = 5438285, upload-time = "2025-04-04T20:53:12.699Z" },
-    { url = "https://files.pythonhosted.org/packages/33/65/40755f27e47a74340952bcb154d94fd1832909ea464445d45f530ec0b475/tensorflow_text-2.19.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:3b9ae0cf9c6b35fd846eea13c5ad3f002660bbeccdb9806ba52a141860d84fd6", size = 5230423, upload-time = "2025-04-04T20:51:29.951Z" },
+    { url = "https://files.pythonhosted.org/packages/39/92/8ca4aa26bead4c92177a91c7d81c29f50a97a6e05ad8f3fa2686b782ec29/tensorflow_text-2.16.1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:bfd9a0891aa90d7ac68d9599c8392925aef495fc50e56fe6070615025545239d", size = 6434063, upload-time = "2024-03-11T18:18:55.847Z" },
+    { url = "https://files.pythonhosted.org/packages/cb/84/164f3275f272fc16cd4893cf1530aaf4626148ba9915e10aab3c7673a6a8/tensorflow_text-2.16.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b1f67d810d2b1fa5480c82721bec6ed140765a3bf7a50830cf5a6f413fb0d867", size = 5201443, upload-time = "2024-03-11T17:56:47.572Z" },
 ]
 
 [[package]]
@@ -1424,28 +1412,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/15/22/9ee70a2574a4f4599c47dd506532914ce044817c7752a79b6a51286319bc/urllib3-2.5.0.tar.gz", hash = "sha256:3fc47733c7e419d4bc3f6b3dc2b4f890bb743906a30d56ba4a5bfa4bbff92760", size = 393185, upload-time = "2025-06-18T14:07:41.644Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a7/c2/fe1e52489ae3122415c51f387e221dd0773709bad6c6cdaa599e8a2c5185/urllib3-2.5.0-py3-none-any.whl", hash = "sha256:e6b01673c0fa6a13e374b50871808eb3bf7046c4b125b216f6bf1cc604cff0dc", size = 129795, upload-time = "2025-06-18T14:07:40.39Z" },
-]
-
-[[package]]
-name = "validators"
-version = "0.35.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/53/66/a435d9ae49850b2f071f7ebd8119dd4e84872b01630d6736761e6e7fd847/validators-0.35.0.tar.gz", hash = "sha256:992d6c48a4e77c81f1b4daba10d16c3a9bb0dbb79b3a19ea847ff0928e70497a", size = 73399, upload-time = "2025-05-01T05:42:06.7Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl", hash = "sha256:e8c947097eae7892cb3d26868d637f79f47b4a0554bc6b80065dfe5aac3705dd", size = 44712, upload-time = "2025-05-01T05:42:04.203Z" },
-]
-
-[[package]]
-name = "vit-keras"
-version = "0.2.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "scipy" },
-    { name = "validators" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/d2/9c/2cc182b43a0924aa23f03a5b4d22052d5353dfb06ee2bbc9ba6ee4dc2026/vit_keras-0.2.0.tar.gz", hash = "sha256:fcff0397f94187823cbf8f5a453b7836b1cd365a7c9e6c422c2e959f8babb1dc", size = 140900, upload-time = "2025-08-04T03:17:50.092Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/66/0d/b2ea088fd10306b9914229e6eb7e82cb02ac0daaa3e81aff7412b75c278b/vit_keras-0.2.0-py3-none-any.whl", hash = "sha256:a1a48b8cbe01895d420cb2b4e96512e7839022347c8733a8fb223fb8fec7510d", size = 24571, upload-time = "2025-08-04T03:17:48.177Z" },
 ]
 
 [[package]]
