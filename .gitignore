@@ -7,3 +7,11 @@ glove.6B.300d.txt
 glove.6B.50d.txt
 embeddingMatrix.*
 A2_test_Images
+glove.6B.zip
+testdataset.cache.data-00000-of-00001
+testdataset.cache.index
+traindataset.cache.data-00000-of-00001
+traindataset.cache.index
+valdataset.cache.data-00000-of-00001
+valdataset.cache.index
+.vscode
